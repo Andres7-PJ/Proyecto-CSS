@@ -1,0 +1,91 @@
+body {
+    display: flex; /* Utiliza Flexbox para organizar el contenido de manera flexible.*/
+    flex-direction: column;/*Alinea los elementos del cuerpo en una columna (de arriba a abajo). */
+    font-family: Arial, sans-serif;/* DA el tipo de letra */
+    margin: 0;/* Elimina los márgenes y el relleno predeterminado del navegador.*/
+    min-height: 100vh;/*Establece la altura mínima de la página a 100% de la altura de la ventana del navegador. */
+    padding: 0;
+    text-align: center;/* Centra el texto dentro de los elementos.*/
+}
+
+header, footer {
+    background-color: #333;/* Establece un color de fondo oscuro (gris oscuro) para el encabezado y pie de página.*/
+    color: #fff;/*Establece el color del texto en blanco. */
+    padding: 10px 0;/*Aplica un relleno de 10 píxeles arriba y abajo. */
+}
+
+main {
+    flex: 1;/* */
+    padding: 20px;/* */
+}
+
+footer {
+    margin-top: auto;/*Empuja el pie de página hacia abajo al final de la página, si el contenido principal no llena toda la altura de la ventana. */
+}
+
+.contenedor {
+    display: none;/*Oculta el contenedor por defecto. */
+    margin: 0 auto;/*Centra el contenedor horizontalmente. */
+    max-width: 600px;/*Establece un ancho máximo de 600px para el contenedor */
+}
+
+.contenedor.visible {
+    display: block;/*Muestra el contenedor cuando la clase visible es agregada. */
+}
+
+h1, h2 {
+    margin-bottom: 20px;/*Añade un margen de 20 píxeles en la parte inferior de los encabezados. */
+}
+
+button {
+    background-color: #0066cc;/*Establece el color de fondo del botón en azul */
+    border: none;/*Elimina el borde del botón. */
+    color: white;/* Define el color del texto en blanco.*/
+    cursor: pointer;/*Cambia el cursor a una mano al pasar sobre el botón. */
+    margin: 10px;/*Añade márgenes de 10 píxeles alrededor del botón. */
+    padding: 10px 20px;/*Añade relleno al botón (10px arriba y abajo, 20px a los lados). */
+}
+
+button:hover {
+    background-color: #00509e;/*Cambia el color de fondo a un tono más oscuro de azul cuando el usuario pasa el mouse sobre el botón. */
+}
+
+form {
+    display: flex;/* */
+    flex-direction: column;/* */
+    gap: 10px;/*Añade un espacio de 10 píxeles entre los elementos del formulario. */
+    text-align: left;/*alinea el texto a la izquierda */
+}
+
+table {
+    border-collapse: collapse;/* */
+    margin: 0 auto;/* */
+    width: 100%;/* */
+}
+
+th, td {
+    border: 1px solid #ddd;/* */
+    padding: 8px;/* */
+}
+
+th {
+    background-color: #f2f2f2;/* */
+}
+
+ul, ol {
+    margin: 0 auto;/* */
+    max-width: 300px;/* */
+    text-align: left;/* */
+}
+
+footer p {
+    font-size: 14px;/* */
+}
+
+
+
+
+
+
+
+

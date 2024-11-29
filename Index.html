@@ -1,0 +1,110 @@
+<!DOCTYPE html> <!-- Versión HTML5 -->
+<html lang="es"><!-- Lenguaje que usara la página -->
+<head><!-- Abre el encabezado principal de la página -->
+    <meta charset="utf-8"><!-- codificación de caracteres que usara la página -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Es para que la página web se adapte al tamaño de pantalla en el dispositivo que se ejecute la web -->
+    <title>Menu Principal</title><!-- Titulo de la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css"><!--Enlaza una hoja de estilos -->
+</head><!-- Cierra el encabezado -->
+<body><!-- Cuerpo de la página -->
+    <header><!--Para hacer un encabezado organizado -->
+        <h1>Colegio Baruc</h1><!-- -->
+    </header><!--Cierra encabezado -->
+    <main><!-- Contenido principal de la página -->
+        <section id="inicio" class="contenedor visible"><!-- Crea una seccion que tiene varias sesiones que se pueden mostrar u ocultar-->
+            <button onclick="mostrarSeccion('sesion1')">Jornada</button><!-- -->
+            <button onclick="mostrarSeccion('sesion2')">Cursos</button><!-- -->
+            <button onclick="mostrarSeccion('sesion3')">Graduación</button><!-- -->
+            <button onclick="mostrarSeccion('sesion4')">Vacaciones</button><!-- -->
+        </section><!-- -->
+        <section id="sesion1" class="contenedor"><!-- -->
+            <h2>Jornada:</h2><!-- Titulo -->
+            <ol><!--Lista ordenada -->
+                <li>Mañana</li><!-- -->
+                <li>Tarde</li><!-- -->
+                <li>Noche</li><!-- -->
+            </ol><!-- -->
+            <button onclick="mostrarSeccion('inicio')">Volver</button><!-- boton que me devuelve a la página de inicio-->
+        </section><!-- -->
+        <section id="sesion2" class="contenedor"><!-- -->
+            <h2>Sesión 2: Lista Desordenada</h2><!-- -->
+            <ul><!-- lista desordenada -->
+                <li>Elemento A</li><!-- -->
+                <li>Elemento B</li><!-- -->
+                <li>Elemento C</li><!-- -->
+            </ul><!-- -->
+            <button onclick="mostrarSeccion('inicio')">Volver</button><!-- -->
+        </section><!-- -->
+        <section id="sesion3" class="contenedor"><!-- -->
+            <h2>Sesión 3: Tabla</h2><!-- -->
+            <table><!-- -->
+                <thead><!-- CREA ENCABEZADO DE LA TABLA -->
+                    <tr><!--representa una fila -->
+                        <th>Columna 1</th><!--representa una celda del encabezado-->
+                        <th>Columna 2</th><!-- -->
+                        <th>Columna 3</th><!-- -->
+                    </tr><!-- -->
+                </thead><!-- -->
+                <tbody><!-- Cuerpo de la tabla -->
+                    <tr><!-- representa una fila de datos -->
+                        <td>Dato 1</td><!-- representa una celda en la fila  -->
+                        <td>Dato 2</td><!-- -->
+                        <td>Dato 3</td><!-- -->
+                    </tr><!-- -->
+                    <tr><!-- -->
+                        <td>Dato A</td><!-- -->
+                        <td>Dato B</td><!-- -->
+                        <td>Dato C</td><!-- -->
+                    </tr><!-- -->
+                </tbody><!-- -->
+            </table><!-- -->
+            <button onclick="mostrarSeccion('inicio')">Volver</button><!-- -->
+        </section><!-- -->
+        <section id="sesion4" class="contenedor"><!-- -->
+            <h2>Sesión 4: Formulario</h2><!-- -->
+            <form><!-- Define un formulario -->
+                <label for="nombre">Nombre:</label><!-- Define el titulo de un campo de entrada -->
+                <input id="nombre" name="nombre" type="text" required><!-- define un campo de entrada -->
+                <label for="email">Correo Electrónico:</label><!-- -->
+                <input id="email" name="email" type="email" required><!-- -->
+                <fieldset><!-- Agrupa un conjunto de elementos relacionados, en este caso, las opciones de género. -->
+                    <legend>Género:</legend><!-- define el nombre para un grupo de opciones -->
+                    <label><input name="genero" type="radio" value="masculino"> Masculino</label><!--Botón de opción para seleccionar -->
+                    <label><input name="genero" type="radio" value="femenino"> Femenino</label><!--Botón de opción para seleccionar -->
+                </fieldset><!--  -->
+                <label for="pais">País:</label><!-- Etiqueta que describe el campo para seleccionar un país  -->
+                <select id="pais" name="pais"><!-- Campo de selección desplegable para que el usuario elija un país. -->
+                    <option value="mx">México</option><!--Opción para seleccionar -->
+                    <option value="us">Estados Unidos</option><!--Opción para seleccionar -->
+                    <option value="es">España</option><!--Opción para seleccionar -->
+                </select><!-- -->
+                <button type="submit">Enviar</button><!-- -->
+            </form><!-- -->
+            <button onclick="mostrarSeccion('inicio')">Volver</button><!-- -->
+        </section><!-- -->
+    </main><!-- -->
+    <footer><!-- crea un mensaje de derechos reservados -->
+        <p>&copy; 2024 Derechos Reservados</p><!-- -->
+    </footer><!-- -->
+    <script>
+        function mostrarSeccion(seccionId) {
+            document.querySelectorAll('.contenedor').forEach((seccion) => {
+                seccion.classList.remove('visible');
+            });
+            document.getElementById(seccionId).classList.add('visible');
+        }
+    </script><!-- Crea un scrip en Java Scrip -->
+</body><!-- -->
+</html><!-- -->
+
+
+
+
+
+
+
+
+
+
+
+
